@@ -43,7 +43,7 @@ public class Main {
 	else if(purchasePrice == cash) System.out.println("ZERO");
 	else  {
 			double cashRemaining = purchasePrice - cash;
-		    d.computeCount(map, cashRemaining);
+		    d.outputMinDenominations(map, cashRemaining);
 			//DEBUG: System.out.println(d.final_count);
 	}
   }
@@ -82,8 +82,8 @@ class Denominations {
 	else  return false;
  } // keyExists
  
- // compare cash remaining to  map entries
-  public static int computeCount(SortedMap<Double, String> map, double cashRemaining) {
+ // compute minimum denominations to return
+  public static int outputMinDenominations(SortedMap<Double, String> map, double cashRemaining) {
     // main logic
     int count = 0;
     double c = 0;
@@ -115,7 +115,7 @@ class Denominations {
                     }  
         } // else
         return count;
-  } // computeCount
+  } // outputMinDenominations
  
     
 } // Denominations
