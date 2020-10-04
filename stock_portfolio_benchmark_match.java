@@ -1,4 +1,5 @@
 // Stock Portfolio Benchmark matching
+// Left of ":" is portfolio and on the right is the benchmark to match
 // sample input 1 = Tesla,STOCK,10|Apple,STOCK,15:Tesla,STOCK,15|Tesla,BOND,10|Apple,STOCK,10
 // expected output:
 //      SELL,Apple,STOCK,5
